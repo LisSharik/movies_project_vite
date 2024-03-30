@@ -1,0 +1,91 @@
+h1{
+    font-family: "Orbitron", sans-serif;
+    font-size: 50px;
+}
+
+.detailsContainer{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display:  flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 4%;
+    gap: 60px;
+}
+
+.movieImg{
+    border-radius: 15px;
+    width: auto;
+    object-fit: cover;
+}
+.movieDetails{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.backgorundImg{
+    position: fixed;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(1.2px);
+    opacity: .1;
+    z-index: -1;
+    background-attachment: fixed;
+    height: auto;
+    top: 0;
+}
+
+
+.movieInfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    letter-spacing: .5px;
+    
+}
+.desciption{
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    padding-right: 1%;
+}
+
+.details{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+iframe{
+    width: 30rem;
+    height: 18rem;
+}
+@media (max-width: 560px) {
+    .movieDetails{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe{
+        width: 20rem;
+        height: 12rem;
+    }
+
+    .movieInfo{
+        width: 80%;
+    }
+}
